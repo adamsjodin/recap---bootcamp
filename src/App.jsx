@@ -1,8 +1,5 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState, useEffect } from 'react'
 import './App.css'
-import { useEffect } from 'react';
 
 function App() {
   const [buttonEvent, setButtonEvent] = useState('Hello World');
@@ -12,7 +9,7 @@ function App() {
   const [countDownTimer, setCountDownTimer] = useState(5);
   const [countDownMessage, setCountDownMessage] = useState('');
 
-  const [colorPicker, setColorPicker] = useState(["aliceblue","antiquewhite","aqua","aquamarine","azure","beige","bisque","black","blanchedalmond","blue","blueviolet","brown","burlywood","cadetblue","chartreuse","chocolate","coral","cornflowerblue","cornsilk","crimson","cyan","darkblue","darkcyan","darkgoldenrod","darkgray","darkgrey","darkgreen","darkkhaki","darkmagenta","darkolivegreen","darkorange","darkorchid","darkred","darksalmon","darkseagreen","darkslateblue","darkslategray","darkslategrey","darkturquoise","darkviolet","deeppink","deepskyblue","dimgray","dimgrey","dodgerblue","firebrick","floralwhite","forestgreen","fuchsia","gainsboro","ghostwhite","gold","goldenrod","gray","grey","green","greenyellow","honeydew","hotpink","indianred","indigo","ivory","khaki","lavender","lavenderblush","lawngreen","lemonchiffon","lightblue","lightcoral","lightcyan","lightgoldenrodyellow","lightgray","lightgrey","lightgreen","lightpink","lightsalmon","lightseagreen","lightskyblue","lightslategray","lightslategrey","lightsteelblue","lightyellow","lime","limegreen","linen","magenta","maroon","mediumaquamarine","mediumblue","mediumorchid","mediumpurple","mediumseagreen","mediumslateblue","mediumspringgreen","mediumturquoise","mediumvioletred","midnightblue","mintcream","mistyrose","moccasin","navajowhite","navy","oldlace","olive","olivedrab","orange","orangered","orchid","palegoldenrod","palegreen","paleturquoise","palevioletred","papayawhip","peachpuff","peru","pink","plum","powderblue","purple","rebeccapurple","red","rosybrown","royalblue","saddlebrown","salmon","sandybrown","seagreen","seashell","sienna","silver","skyblue","slateblue","slategray","slategrey","snow","springgreen","steelblue","tan","teal","thistle","tomato","turquoise","violet","wheat","white","whitesmoke","yellow","yellowgreen"])
+  const [colorPicker, setColorPicker] = useState('');
 
   function buttonEventFunction() {
     setButtonEvent(prevButtonEvent => {
@@ -42,6 +39,10 @@ function App() {
       return () => clearInterval(timer)
     }, [countDownTimer]);
 
+    function changeColorFunction(e) {
+      setColorPicker(e.target.value)
+    }
+
   return (
     <div className="App">
       <h1>BOOTCAMP</h1>
@@ -58,9 +59,18 @@ function App() {
           value={inputDuplication}
         />
         <h2>{inputDuplication}</h2>
-
         <h2>{countDownTimer} seconds left</h2>
         <p>{countDownMessage}</p>
+
+        <div style={{backgroundColor: colorPicker, padding: 100}}>
+        <input 
+          style={{padding: 10}}
+          type="text"
+          placeholder='Enter background color'
+          onChange={changeColorFunction}
+          />
+        </div>
+
       </section>
     </div>
   )
