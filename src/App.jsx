@@ -26,19 +26,19 @@ function App() {
         <ButtonEventFunction buttonEvent={buttonEvent} setButtonEvent={setButtonEvent}/>
         <ClickCounterFunction clickCounter={clickCounter} setClickCounter={setClickCounter}/>
         <InputDuplicationFunction inputDuplication={inputDuplication} setInputDuplication={setInputDuplication}/>
-        {/* <CountDownTimerFunction 
+        <CountDownTimerFunction 
           countDownTimer={countDownTimer}
           setCountDownTimer={setCountDownTimer}  
           countDownMessage={countDownMessage}
           setCountDownMessage={setCountDownMessage}
-        /> */}
+        />
         <ColorPickerFunction 
           colorPicker={colorPicker}
           setColorPicker={setColorPicker}
           suggestedColor={suggestedColor}
           setSuggestedColor={setSuggestedColor}
         />
-        <GuessTheNumberFunction guessedNumber={guessedNumber} setGuessedNumber={setGuessedNumber}/>
+        <GuessTheNumberFunction />
       </section>
     </div>
   )
