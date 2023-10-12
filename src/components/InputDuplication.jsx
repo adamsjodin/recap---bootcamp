@@ -5,7 +5,8 @@ function InputDuplicationFunction({ inputDuplication, setInputDuplication }) {
     }
 
     return (
-        <div>
+        <div className="bootcamp-styling">
+            <h2>Input Duplication</h2>
             <input
                 type="text"
                 placeholder='Type here'

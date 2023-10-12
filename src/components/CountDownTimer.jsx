@@ -22,8 +22,9 @@ function CountDownTimerFunction({
       }, [countDownTimer]);
 
     return (
-        <div>
-            <h2>{countDownTimer} seconds left</h2>
+        <div className='bootcamp-styling'>
+            <h2>Countdown timer</h2>
+            <h3>{countDownTimer} seconds left</h3>
             <p>{countDownMessage}</p>
         </div>
     );

@@ -21,7 +21,8 @@ function ColorPickerFunction({
         ];
     
     return (
-        <div style={{ backgroundColor: colorPicker, padding: 100 }}>
+        <div className="bootcamp-styling" style={{ backgroundColor: colorPicker, padding: 100 }}>
+            <h2>Color Picker</h2>
             <input
                 style={{ padding: 10 }}
                 type="text"

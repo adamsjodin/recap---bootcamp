@@ -6,8 +6,9 @@ function ClickCounterFunction({ clickCounter, setClickCounter }) {
 
 
     return ( 
-        <div>
-            <h2>{clickCounter}</h2>
+        <div className="bootcamp-styling">
+            <h2>Click counter</h2>
+            <h3>{clickCounter}</h3>
             <button onClick={handleClick}>Click to count</button>
         </div>
      );

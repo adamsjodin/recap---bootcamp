@@ -1,0 +1,35 @@
+1. Button Event
+    Lägg till en knapp och se till att när man klickar på knappen så byts texten på knappen.
+
+2. Click Counter
+    Lägg till en knapp och se till att när man klickar på knappen så visas en räknare över hur många gånger man har klickat på den.
+
+3. Input Duplication
+    Lägg till ett textfält och se till att varje gång man skriver i fältet så visas samma innehåll i en annan paragraf.
+
+4. Countdown timer
+    Skapa en sekundräknare som tickar nedåt tills den nått noll och visar hur många sekunder det är kvar. När den har räknat klart, visa ett meddelande.
+
+5.Color Picker 🥾
+    Skapa ett textfält, när man skriver in en färg och trycker enter ska bodyn byta bakgrundsfärg till den färgen. Om färgen inte finns ska ett felmeddelande visas.
+    Alla CSS-färger
+    ["aliceblue","antiquewhite","aqua","aquamarine","azure","beige","bisque","black","blanchedalmond","blue","blueviolet","brown","burlywood","cadetblue","chartreuse","chocolate","coral","cornflowerblue","cornsilk","crimson","cyan","darkblue","darkcyan","darkgoldenrod","darkgray","darkgrey","darkgreen","darkkhaki","darkmagenta","darkolivegreen","darkorange","darkorchid","darkred","darksalmon","darkseagreen","darkslateblue","darkslategray","darkslategrey","darkturquoise","darkviolet","deeppink","deepskyblue","dimgray","dimgrey","dodgerblue","firebrick","floralwhite","forestgreen","fuchsia","gainsboro","ghostwhite","gold","goldenrod","gray","grey","green","greenyellow","honeydew","hotpink","indianred","indigo","ivory","khaki","lavender","lavenderblush","lawngreen","lemonchiffon","lightblue","lightcoral","lightcyan","lightgoldenrodyellow","lightgray","lightgrey","lightgreen","lightpink","lightsalmon","lightseagreen","lightskyblue","lightslategray","lightslategrey","lightsteelblue","lightyellow","lime","limegreen","linen","magenta","maroon","mediumaquamarine","mediumblue","mediumorchid","mediumpurple","mediumseagreen","mediumslateblue","mediumspringgreen","mediumturquoise","mediumvioletred","midnightblue","mintcream","mistyrose","moccasin","navajowhite","navy","oldlace","olive","olivedrab","orange","orangered","orchid","palegoldenrod","palegreen","paleturquoise","palevioletred","papayawhip","peachpuff","peru","pink","plum","powderblue","purple","rebeccapurple","red","rosybrown","royalblue","saddlebrown","salmon","sandybrown","seagreen","seashell","sienna","silver","skyblue","slateblue","slategray","slategrey","snow","springgreen","steelblue","tan","teal","thistle","tomato","turquoise","violet","wheat","white","whitesmoke","yellow","yellowgreen"]
+
+Level Up!
+    Lägg till så när man skriver i input-fältet så dyker det upp en suggestion-lista på alla färger som matchar det du skriver. Dölj suggestion-listan om input-fältet är tomt. 
+
+Extra Level Up!
+    Lägg också till att om du klickar på en av dessa så byts det till den färgen och texten i input-fältet ändras.
+
+6. Game: Guess the number 🥾
+    Du ska skapa ett spel där spelaren ska gissa ett hemligt tal.
+    Spelet går till såhär:
+    Datorn slumpar ett hemligt heltal
+    Spelaren får skri   va in sin gissning i ett input-fält
+    Om spelaren gissar för högt så ska ett meddelande visas "Too high!", sen få en ny gissning
+    Om spelaren gissar för lågt så ska ett meddelande visas "Too low!", sen få en ny gissning
+    Om spelaren gissar rätt så ska ett meddelande visas "Correct!" och sedan visa en knapp "Play again?"
+    Gå bananas med styling!
+
+Level Up!
+    Lägg till så att man har ett max antal gissningar på sig.

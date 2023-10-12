@@ -7,7 +7,10 @@ function ButtonEventFunction({ buttonEvent, setButtonEvent }) {
     };
 
     return ( 
-        <button onClick={handleClick}>{buttonEvent}</button>
+        <div className="bootcamp-styling">
+            <h2>Button Event</h2>
+            <button onClick={handleClick}>{buttonEvent}</button>
+        </div>
      );
 };
 
